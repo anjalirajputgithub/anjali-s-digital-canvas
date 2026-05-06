@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { z } from "zod";
+import emailjs from "@emailjs/browser";
 import { SectionHeading } from "./About";
 import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
+
+const EMAILJS_SERVICE_ID = "service_4ejut6o";
+const EMAILJS_TEMPLATE_ID = "template_cq5geez";
+const EMAILJS_PUBLIC_KEY = "8Sret_7xcCv_9DT69";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Name required").max(100),
@@ -15,7 +20,7 @@ export function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     const r = schema.safeParse(form);
     if (!r.success) {
@@ -23,11 +28,26 @@ export function Contact() {
       return;
     }
     setLoading(true);
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          reply_to: form.email,
+        },
+        { publicKey: EMAILJS_PUBLIC_KEY },
+      );
       toast.success("Message sent! I'll get back to you soon.");
       setForm({ name: "", email: "", message: "" });
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      toast.error("Failed to send. Please try again or email directly.");
+    } finally {
       setLoading(false);
-    }, 700);
+    }
   };
 
   const contacts = [
