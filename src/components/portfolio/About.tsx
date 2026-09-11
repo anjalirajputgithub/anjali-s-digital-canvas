@@ -3,7 +3,7 @@ import { GraduationCap, School, Briefcase } from "lucide-react";
 const timeline = [
   {
     icon: Briefcase,
-    year: "2024",
+    year: "2025",
     title: "Frontend Developer Intern",
     sub: "Edusmark.ai · 6 months",
     desc: "Built the company website from scratch with focus on UI development and responsiveness.",
@@ -18,7 +18,7 @@ const timeline = [
   {
     icon: School,
     year: "2022",
-    title: "Class 12th — 93.4%",
+    title: "Class 12th — 92.4%",
     sub: "Aligarh",
     desc: "Completed senior secondary education with distinction in science stream.",
   },
@@ -35,7 +35,7 @@ export function About() {
               I'm a Computer Science student at <span className="gradient-text font-semibold">IET Lucknow</span>, driven by a love for building things that work beautifully end-to-end.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              My goal is to become a skilled full-stack developer and contribute to impactful software solutions. I enjoy turning complex problems into clean, scalable products.
+              My goal is to become a skilled full-stack developer with AI integration and contribute to impactful software solutions. I enjoy turning complex problems into clean, scalable products.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-3">
               {["Problem-solving mindset", "Continuous learner", "Detail-oriented", "Team collaborator"].map((t) => (

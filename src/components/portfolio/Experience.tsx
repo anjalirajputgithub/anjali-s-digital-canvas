@@ -23,7 +23,7 @@ export function Experience() {
                 <p className="gradient-text font-medium">Edusmark.ai</p>
               </div>
             </div>
-            <span className="glass rounded-full px-4 py-1.5 text-xs text-muted-foreground">6 months</span>
+            <span className="glass rounded-full px-4 py-1.5 text-xs text-muted-foreground">9 months</span>
           </div>
           <ul className="grid sm:grid-cols-2 gap-3">
             {bullets.map((b) => (

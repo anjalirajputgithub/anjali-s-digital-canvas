@@ -1,5 +1,5 @@
 import { SectionHeading } from "./About";
-import { Code2, Layers, Wrench, Brain } from "lucide-react";
+import { Code2, Layers, Wrench, Brain, Bot } from "lucide-react";
 
 const groups = [
   {
@@ -9,18 +9,25 @@ const groups = [
   },
   {
     icon: Layers,
-    title: "Frameworks",
-    items: ["React.js", "Node.js", "Express.js", "Next.js", "Redux Toolkit"],
+    title: "Web & Integration",
+    items: ["React.js", "Node.js", "Express.js", "Next.js", "MongoDB", "Redux Toolkit", "Stripe API", "PayPal API", "JWT & Cookie-Based Authentication"],
   },
   {
-    icon: Wrench,
-    title: "Tools & Tech",
-    items: ["MongoDB", "Git / GitHub", "VS Code", "Stripe API", "PayPal API"],
+    icon: Bot,
+    title: "GenAI & LLM",
+    items: [
+      "Generative AI",
+      "LLMs",
+      "LangChain",
+      "LangGraph",
+      "Agentic AI",
+      "Runnables",
+    ],
   },
   {
     icon: Brain,
-    title: "Core Skills",
-    items: ["DSA", "REST APIs", "Problem Solving", "Computer Networks"],
+    title: "Core Competencies",
+    items: ["DSA", "REST APIs", "Git / GitHub", "VS Code", "Docker", "Problem Solving", "DBMS", "Computer Networks"],
   },
 ];
 

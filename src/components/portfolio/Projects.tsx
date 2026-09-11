@@ -8,6 +8,8 @@ const projects = [
     tech: ["Next.js", "React", "MongoDB", "Tailwind", "Redux Toolkit"],
     features: ["JWT Authentication", "Cart Management", "PayPal Integration", "Cloudinary Uploads", "Mobile Responsive"],
     gradient: "from-fuchsia-500/30 via-purple-500/20 to-blue-500/30",
+    github: "https://github.com/anjalirajputgithub/E-Commerce",
+    live: "https://bazario-git-main-annu1992rajput-3771s-projects.vercel.app/",
   },
   {
     title: "Doctor Appointment System",
@@ -15,6 +17,8 @@ const projects = [
     tech: ["Node.js", "React", "MongoDB", "Stripe"],
     features: ["Doctor Search by Specialization", "Secure Login System", "Stripe Payments", "Dynamic Data Rendering"],
     gradient: "from-cyan-500/30 via-blue-500/20 to-purple-500/30",
+    github: "https://github.com/anjalirajputgithub/DoctorAppointment-site",
+
   },
 ];
 
@@ -49,11 +53,26 @@ export function Projects() {
                   ))}
                 </ul>
                 <div className="flex gap-3">
-                  <a href="#" className="gradient-btn inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold">
-                    <ExternalLink size={14} /> Live Demo
-                  </a>
-                  <a href="#" className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold hover:border-primary/40 transition-colors">
-                    <Github size={14} /> GitHub
+                  {p.live && (
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="gradient-btn inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold"
+                    >
+                      <ExternalLink size={14} />
+                      Live Demo
+                    </a>
+                  )}
+
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold hover:border-primary/40 transition-colors"
+                  >
+                    <Github size={14} />
+                    GitHub
                   </a>
                 </div>
               </div>

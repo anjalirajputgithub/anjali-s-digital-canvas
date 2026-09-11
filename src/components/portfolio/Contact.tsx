@@ -51,10 +51,10 @@ export function Contact() {
   };
 
   const contacts = [
-    { icon: Mail, label: "anjali@email.com", href: "mailto:anjali@email.com" },
-    { icon: Phone, label: "+91 98765 43210", href: "tel:+919876543210" },
-    { icon: Linkedin, label: "linkedin.com/in/anjali", href: "#" },
-    { icon: Github, label: "github.com/anjali", href: "#" },
+    { icon: Mail, label: "anjali020rajput@gmail.com", href: "mailto:anjali020rajput@gmail.com" },
+    { icon: Phone, label: "+91 8279707874", href: "tel:+918279707874" },
+    { icon: Linkedin, label: "Anjali Rajput", href: "https://www.linkedin.com/in/anjali-rajput048/" },
+    { icon: Github, label: "anjalirajputgithub", href: "https://github.com/anjalirajputgithub" },
   ];
 
   return (

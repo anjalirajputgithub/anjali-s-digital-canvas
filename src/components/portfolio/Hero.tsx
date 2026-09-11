@@ -1,4 +1,4 @@
-import anjali from "@/assets/anjali.jpg";
+import anjali from "@/assets/anjali.jpeg";
 import { ArrowUpRight, Download, Sparkles, Star, Github, Linkedin } from "lucide-react";
 
 export function Hero() {
@@ -46,28 +46,28 @@ export function Hero() {
             <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
               Hi, I'm <span className="text-foreground font-medium">Anjali Rajput</span> — a
               Full Stack Developer (MERN) and B.Tech CSE student at IET Lucknow (2023–2027),
-              crafting scalable, user-first web applications.
+              crafting scalable, user-first web applications with AI integration.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
-                href="#projects"
+                href="https://bazario-git-main-annu1992rajput-3771s-projects.vercel.app/"
                 className="gradient-btn group inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold"
               >
                 View my work
                 <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
               <a
-                href="#contact"
+                href="/AnjaliResume(1).pdf"
                 className="glass glow-border inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all"
               >
                 <Download size={16} /> Download CV
               </a>
               <div className="flex items-center gap-2 ml-1">
-                <a href="#" aria-label="GitHub" className="glass h-10 w-10 inline-flex items-center justify-center rounded-full glow-border">
+                <a href="https://github.com/anjalirajputgithub" aria-label="GitHub" className="glass h-10 w-10 inline-flex items-center justify-center rounded-full glow-border">
                   <Github size={16} />
                 </a>
-                <a href="#" aria-label="LinkedIn" className="glass h-10 w-10 inline-flex items-center justify-center rounded-full glow-border">
+                <a href="https://www.linkedin.com/in/anjali-rajput048/" aria-label="LinkedIn" className="glass h-10 w-10 inline-flex items-center justify-center rounded-full glow-border">
                   <Linkedin size={16} />
                 </a>
               </div>

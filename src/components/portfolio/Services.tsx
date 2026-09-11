@@ -1,10 +1,15 @@
 import { SectionHeading } from "./About";
-import { Code, Server, Palette, Plug, Brain } from "lucide-react";
+import { Code, Server, Palette, Plug, Brain, Bot } from "lucide-react";
 
 const services = [
   { icon: Code, title: "MERN Stack Development", desc: "End-to-end web apps using MongoDB, Express, React and Node." },
   { icon: Server, title: "Scalable Backends", desc: "Robust REST APIs, auth systems and database design." },
   { icon: Plug, title: "API Integration", desc: "Stripe, PayPal, Cloudinary and third-party service integrations." },
+   {
+    icon: Bot,
+    title: "Generative AI & LLM Applications",
+    desc: "AI-powered applications using LLMs, LangChain and LangGraph, with agentic workflows, Runnables and intelligent automation.",
+  },
   { icon: Palette, title: "Responsive UI/UX", desc: "Pixel-perfect, mobile-first interfaces with smooth interactions." },
   { icon: Brain, title: "SDE / Problem Solving", desc: "Strong DSA foundations and competitive programming — 500+ problems solved across LeetCode, Codeforces & GFG. Comfortable with algorithms, system design fundamentals and writing optimized, production-ready code for SDE roles." },
 ];
