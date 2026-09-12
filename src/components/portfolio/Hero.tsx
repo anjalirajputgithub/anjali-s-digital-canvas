@@ -4,7 +4,7 @@ import { ArrowUpRight, Download, Sparkles, Star, Github, Linkedin } from "lucide
 export function Hero() {
   return (
     <section id="home" className="relative pt-28 pb-16 md:pt-36 md:pb-24">
-      {/* Decorative blobs */}
+      
       <div
         aria-hidden
         className="pointer-events-none absolute -top-20 -left-24 h-[420px] w-[420px] rounded-full opacity-60 blur-3xl"
